@@ -35,7 +35,7 @@ $(function(){
   function prevImage(){
     //creo la referenza dell'immagine e del pallino "active"
     var activeImg = $('.wrapper img.active');
-    var activeCircle = $('.nav.active');
+    var activeCircle = $('.nav .active');
 
      //rimuovo la classe .active all'elemento attivo
      activeImg.removeClass('active');
