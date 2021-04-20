@@ -22,7 +22,7 @@ $(function(){
     if(activeImg.hasClass('last')){
       //aggiungo active a first
       $('.wrapper img.first').addClass('active');
-      $('.nav .active').addClass('active');
+      $('.nav .first').addClass('active');
 
     }else{
       //se non è l'elemento last aggiungo active alla prossima immagine
@@ -41,7 +41,7 @@ $(function(){
      activeImg.removeClass('active');
      activeCircle.removeClass('active');
 
-     //aggiungo all'elemento precedente img con next la classe "active"
+     //aggiungo all'elemento precedente img con prev la classe "active"
       activeImg.prev().addClass('active');
       activeCircle.prev().addClass('active');
 
@@ -50,12 +50,12 @@ $(function(){
     if(activeImg.hasClass('first')){
       //aggiungo active a first
       $('.wrapper img.last').addClass('active');
-      $('.nav.active').addClass('active');
+      $('.nav .last').addClass('active');
 
     }else{
       //se non è l'elemento first aggiungo active alla precedente immagine
-      activeImg.next('img').addClass('active');
-      activeCircle.next('i').addClass('active');
+      activeImg.prev('img').addClass('active');
+      activeCircle.prev('i').addClass('active');
     }
   }
 
